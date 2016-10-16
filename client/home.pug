@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title File Meta Data
+        link(href='./css/style.css' type='text/css' rel='stylesheet')
+    body
+        a(href='./')
+            h1 File Meta Data
+        div
+            form(action='/upload' method='post' enctype='multipart/form-data')
+                label.fileInput 
+                    span Select File
+                    input(type='file', name='uploadFile',id='inputFile')
+                label 
+                    input(type='submit',value='Get File Size')
+    script(src='./js/index.js')
